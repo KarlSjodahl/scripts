@@ -17,7 +17,8 @@ def main(argv):
 		#print len(l);
 		ip = l[-17:];
 		ip = ip.replace('"', '');
-		fo.write(ip);
+		if '-' not in ip: 
+			fo.write(ip);
 
 	f.close();
 	fo.close();
